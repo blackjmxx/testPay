@@ -101,12 +101,6 @@ function init() {
 
         //var amount = $('#amount').val();
 
-        $.ajax({
-            method:"GET",
-            url: "/recharge/news/"+$("#amount").val(),
-
-        })
-            .done(function(data) {
                 //document.getElementsByClassName('home-invite-friend-banner').style.display = 'none!important';
                 $('.home-invite-friend-banner').attr("style", "display: none !important");
                 $('#az-header-wrapper').attr("style", "display: none !important");
@@ -115,21 +109,14 @@ function init() {
 
                 trans_id = data.transaction_id;
                 CinetPay.setSignatureData({
-                    amount: data.amount,
-                    trans_id: data.transaction_id,
-                    currency: data.currency,
-                    designation: data.designation,
-                    custom: data.cpm_custom
+                    amount: 10,
+                    trans_id: "00000000",
+                    currency: "CFA",
+                    designation: "azert",
+                    custom: "zert"
                 });
                 CinetPay.getSignature();
 
-            })
-            .fail(function(jqXHR, textStatus) {
-
-                console.log(jqXHR);
-            });
-
     });
 
-}
-
+}    
