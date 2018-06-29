@@ -107,7 +107,7 @@ function init() {
                 //$('#az-header-wrapper').css("display", "none!important");
                 //$('.home-invite-friend-banner').css("display", "none!important");
 
-                trans_id = data.transaction_id;
+                
                 CinetPay.setSignatureData({
                     amount: 10,
                     trans_id: "00000000",
