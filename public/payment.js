@@ -110,7 +110,7 @@ function init() {
                 
                 CinetPay.setSignatureData({
                     amount: 5,
-                    trans_id: "00000002",
+                    trans_id: "00000003",
                     currency: "CFA",
                     designation: "azert",
                     custom: "zert"
