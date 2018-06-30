@@ -45,7 +45,7 @@ function init() {
         //error_div.innerHTML += '<b>code:</b>' + e.code + '<br><b>Message:</b>:' + e.message;
     });
     CinetPay.on('paymentSuccessfull', function (paymentInfo) {
-
+        console.log(paymentInfo);
         if (typeof paymentInfo.lastTime != 'undefined') {
             if (paymentInfo.cpm_result == '00') {
                 $('.home-invite-friend-banner').attr("style", "display: block !important");
@@ -110,7 +110,7 @@ function init() {
                 
                 CinetPay.setSignatureData({
                     amount: 5,
-                    trans_id: "00000001",
+                    trans_id: "00000002",
                     currency: "CFA",
                     designation: "azert",
                     custom: "zert"
