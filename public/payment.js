@@ -14,7 +14,7 @@ function init() {
     CinetPay.setConfig({
         apikey: '9171204505a8177d723b591.18230557',
         site_id: 685921,
-        notify_url:"https://pg-app-74w9kvxmpn4wk9x0hy3cxurvreesex.scalabl.cloud/1/functions/ValidateTransaction&cancel_url=https://pg-app-74w9kvxmpn4wk9x0hy3cxurvreesex.scalabl.cloud/1/functions/ValidateTransaction"
+        notify_url:"https://pg-app-74w9kvxmpn4wk9x0hy3cxurvreesex.scalabl.cloud/1/functions/ValidateTransaction"
     });
     //-------------Gestion des evenements
     //error
@@ -109,7 +109,7 @@ function init() {
 
                 
                 CinetPay.setSignatureData({
-                    amount: 10,
+                    amount: 5,
                     trans_id: "00000000",
                     currency: "CFA",
                     designation: "azert",
